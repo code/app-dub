@@ -59,6 +59,36 @@
       "pages": ["introduction", "data-model"]
     },
     {
+      "group": "Quickstart",
+      "pages": [
+        {
+          "group": "Typescript",
+          "icon": "js",
+          "pages": [
+            "quickstart/typescript",
+            "quickstart/nextjs",
+            "quickstart/remix",
+            "quickstart/nuxt",
+            "quickstart/express"
+          ]
+        },
+        {
+          "group": "Go",
+          "icon": "golang",
+          "pages": ["quickstart/go"]
+        },
+        {
+          "group": "Python",
+          "icon": "python",
+          "pages": [
+            "quickstart/python",
+            "quickstart/flask",
+            "quickstart/django"
+          ]
+        }
+      ]
+    },
+    {
       "group": "Resources",
       "pages": ["integrations", "examples"]
     },
@@ -70,6 +100,7 @@
       "group": "API Reference",
       "pages": [
         "api-reference/introduction",
+        "api-reference/tokens",
         "api-reference/rate-limits",
         "api-reference/errors"
       ]
@@ -106,12 +137,10 @@
     {
       "group": "Domains",
       "pages": [
-        "api-reference/endpoint/add-a-domain",
+        "api-reference/endpoint/create-a-domain",
         "api-reference/endpoint/update-a-domain",
         "api-reference/endpoint/delete-a-domain",
-        "api-reference/endpoint/retrieve-a-list-of-domains",
-        "api-reference/endpoint/set-a-primary-domain",
-        "api-reference/endpoint/transfer-a-domain"
+        "api-reference/endpoint/retrieve-a-list-of-domains"
       ]
     },
     {
@@ -143,6 +172,7 @@
         "sdks/typescript/overview",
         {
           "group": "Links",
+          "icon": "link",
           "pages": [
             "sdks/typescript/links/create",
             "sdks/typescript/links/get",
@@ -156,10 +186,12 @@
         },
         {
           "group": "Analytics",
+          "icon": "chart-line",
           "pages": ["sdks/typescript/analytics/retrieve"]
         },
         {
           "group": "Workspaces",
+          "icon": "folder",
           "pages": [
             "sdks/typescript/workspaces/create",
             "sdks/typescript/workspaces/get",
@@ -168,21 +200,22 @@
         },
         {
           "group": "Domains",
+          "icon": "globe",
           "pages": [
-            "sdks/typescript/domains/add",
+            "sdks/typescript/domains/create",
             "sdks/typescript/domains/update",
             "sdks/typescript/domains/delete",
-            "sdks/typescript/domains/list",
-            "sdks/typescript/domains/set-primary",
-            "sdks/typescript/domains/transfer"
+            "sdks/typescript/domains/list"
           ]
         },
         {
           "group": "Tags",
+          "icon": "tag",
           "pages": ["sdks/typescript/tags/create", "sdks/typescript/tags/list"]
         },
         {
           "group": "Metatags",
+          "icon": "image",
           "pages": ["sdks/typescript/metatags/get"]
         }
       ]
@@ -196,8 +229,8 @@
   },
   "footerSocials": {
     "twitter": "https://twitter.com/dubdotco",
-    "github": "https://github.com/steven-tey/dub",
-    "linkedin": "https://www.linkedin.com/company/dubhq",
+    "github": "https://github.com/dubinc/dub",
+    "linkedin": "https://www.linkedin.com/company/dubinc",
     "website": "https://dub.co"
   },
   "redirects": [
@@ -308,6 +341,18 @@
     {
       "source": "/sdks/typescript/analytics/top-urls",
       "destination": "/sdks/typescript/analytics/clicks/top-urls"
+    },
+    {
+      "source": "/quickstart/nodejs",
+      "destination": "/quickstart/typescript"
+    },
+    {
+      "source": "/sdks/typescript/domains/add",
+      "destination": "/sdks/typescript/domains/create"
+    },
+    {
+      "source": "/api-reference/endpoint/add-a-domain",
+      "destination": "/api-reference/endpoint/create-a-domain"
     }
   ]
 }
